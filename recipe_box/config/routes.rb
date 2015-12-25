@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  # Create a resource route for our recipes contoller (maps HTTP verbs to controller actions automatically):
+  resources :recipes
+
+  # Map the root of our recipe site to 'recipes#index'
+  root 'recipes#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
